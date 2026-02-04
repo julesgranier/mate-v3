@@ -7,23 +7,23 @@ const items = [
     {
         content: (
             <>
-                We believe the best
+                Creemos que los mejores
                 <br />
-                moments in life happen
+                momentos de la vida ocurren
                 <br />
-                <span className="font-bold text-5xl md:text-7xl lg:text-8xl mt-4 block">In Real Life</span>
+                <span className="font-bold text-5xl md:text-7xl lg:text-8xl mt-4 block">fuera de la pantalla.</span>
             </>
         )
     },
     {
         content: (
             <>
-                We make a filter so
+                Filtramos
                 <br />
                 <span className="font-bold text-4xl md:text-6xl lg:text-7xl block mt-2">
-                    every person you meet is
+                    para que no
                     <br />
-                    worth your time.
+                    pierdas el tiempo.
                 </span>
             </>
         )
@@ -31,11 +31,11 @@ const items = [
     {
         content: (
             <>
-                One conversation.
+                Una conversación,
                 <br />
-                One connection.
+                una conexión...
                 <br />
-                <span className="font-bold text-4xl md:text-6xl lg:text-7xl mt-4 block">Can change your life.</span>
+                <span className="font-bold text-4xl md:text-6xl lg:text-7xl mt-4 block">Te pueden cambiar la vida.</span>
             </>
         )
     },
@@ -44,7 +44,7 @@ const items = [
             <div className="flex flex-col items-center justify-center gap-8">
                 <div>
                     <span className="font-bold text-4xl md:text-6xl lg:text-7xl mb-4 block">Upgrade your circle</span>
-                    Every Thursday.
+                    every Thursday with Mate.
                 </div>
             </div>
         )
