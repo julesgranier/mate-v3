@@ -10,7 +10,7 @@ export default function FooterData() {
                     alt="Footer Design Desktop"
                     width={1440}
                     height={800}
-                    className="w-full h-auto hidden md:block"
+                    className="mx-auto w-[75%] h-auto hidden md:block"
                     quality={100}
                 />
                 {/* Mobile Footer Image */}
@@ -19,16 +19,16 @@ export default function FooterData() {
                     alt="Footer Design Mobile"
                     width={390}
                     height={844}
-                    className="w-full h-auto block md:hidden"
+                    className="mx-auto w-[75%] h-auto block md:hidden"
                     quality={100}
                 />
 
                 {/* Footer Links - Visual Text */}
                 <div className="absolute bottom-[4%] md:bottom-[5%] w-full flex flex-col items-center">
                     <div className="flex flex-wrap justify-center gap-[4vw] md:gap-[3vw] text-[3vw] md:text-[1.2vw] font-bold tracking-widest text-white uppercase mb-2 px-4 text-center max-[375px]:text-[2.5vw] min-[1440px]:text-[18px]">
-                        <a href="https://mateapp.es/aviso-legal" target="_blank" rel="noopener noreferrer" className="hover:text-white/70 transition-colors whitespace-nowrap">Legal Notice</a>
-                        <a href="https://mateapp.es/terminos-y-condiciones" target="_blank" rel="noopener noreferrer" className="hover:text-white/70 transition-colors whitespace-nowrap">TT</a>
-                        <a href="https://mateapp.es/politica-de-privacidad" target="_blank" rel="noopener noreferrer" className="hover:text-white/70 transition-colors whitespace-nowrap">PP</a>
+                        <a href="/aviso-legal" className="hover:text-white/70 transition-colors whitespace-nowrap">Legal Notice</a>
+                        <a href="/terminos-y-condiciones" className="hover:text-white/70 transition-colors whitespace-nowrap">TT</a>
+                        <a href="/politica-de-privacidad" className="hover:text-white/70 transition-colors whitespace-nowrap">PP</a>
                     </div>
                 </div>
             </div>
