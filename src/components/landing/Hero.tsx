@@ -58,7 +58,7 @@ export default function Hero() {
             </div>
 
             {/* Text Overlays Layer */}
-            <div className="absolute inset-0 flex flex-col justify-end p-[8vw] md:p-[6vw] pb-[calc(10vw+80px)] md:pb-[4vw] font-[family-name:var(--font-funnel-sans)] pointer-events-none">
+            <div className="absolute inset-0 flex flex-col justify-end p-[8vw] md:p-[6vw] pb-[calc(10vw+120px)] md:pb-[4vw] font-[family-name:var(--font-funnel-sans)] pointer-events-none">
                 <div className="w-full flex flex-col md:flex-row md:items-end justify-between gap-6 md:gap-4">
                     {/* Left Side Content */}
                     <div className="flex flex-col gap-4 md:gap-8">
