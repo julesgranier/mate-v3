@@ -3,72 +3,82 @@ import Link from "next/link";
 
 export default function Hero() {
     return (
-        <section className="relative w-full bg-black snap-start overflow-hidden">
-            <div className="w-full relative aspect-[1440/1024] md:aspect-auto">
-                {/* Background Image */}
+        <section className="relative w-full h-screen bg-black snap-start overflow-hidden">
+            {/* Desktop Background */}
+            <div className="hidden md:block absolute inset-0">
                 <Image
-                    src="/hero-new.png"
-                    alt="Hero Design"
-                    width={1440}
-                    height={1024}
-                    className="w-full h-auto block"
+                    src="/hero-desktop-v4.png"
+                    alt="Hero Design Desktop"
+                    fill
+                    className="object-cover"
                     priority
                     quality={100}
                 />
+            </div>
 
-                {/* Header Logo - Top Left */}
-                <div className="absolute top-[6vw] left-[6vw] md:top-[4vw] md:left-[4vw] z-50">
-                    <Link href="/" className="block hover:scale-105 transition-transform">
-                        <Image
-                            src="/logo.png"
-                            alt="Mate Logo"
-                            width={120}
-                            height={40}
-                            className="w-[20vw] md:w-[10vw] max-w-[120px] md:max-w-[160px] h-auto"
-                        />
-                    </Link>
-                </div>
+            {/* Mobile Background */}
+            <div className="block md:hidden absolute inset-0">
+                <Image
+                    src="/hero-mobile-v4.png"
+                    alt="Hero Design Mobile"
+                    fill
+                    className="object-cover"
+                    priority
+                    quality={100}
+                />
+            </div>
 
-                {/* Header CTA Button - Top Right */}
-                <div className="absolute top-[6vw] right-[6vw] md:top-[4vw] md:right-[4vw] z-50">
-                    <a
-                        href="https://www.mateapp.es/download"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="cursor-pointer hover:scale-105 transition-transform block"
-                    >
-                        <Image
-                            src="/cta-button.png"
-                            alt="Solicita tu acceso"
-                            width={300}
-                            height={90}
-                            className="w-[32vw] md:w-[15vw] max-w-[150px] md:max-w-[260px] h-auto"
-                        />
-                    </a>
-                </div>
+            {/* Header Layer (Logo & Button) */}
+            {/* Fluid positioning with vw units as requested previously for better responsiveness */}
+            <div className="absolute top-[6vw] left-[6vw] md:top-[4vw] md:left-[4vw] w-[calc(100%-12vw)] md:w-[calc(100%-8vw)] z-50 flex justify-between items-start">
+                <Link href="/" className="block hover:scale-105 transition-transform">
+                    <Image
+                        src="/logo.png"
+                        alt="Mate Logo"
+                        width={140}
+                        height={46}
+                        className="w-[18vw] md:w-[8vw] max-w-[85px] md:max-w-[125px] h-auto"
+                    />
+                </Link>
 
-                {/* Text Overlays */}
-                <div className="absolute inset-0 flex flex-col justify-end p-[6vw] md:p-[4vw] pointer-events-none font-[family-name:var(--font-funnel-sans)]">
-                    {/* Main Text (65px) */}
-                    <div className="mb-[4vw] max-w-[90%] md:max-w-[70%]">
-                        <h1 className="text-[7vw] md:text-[4.5vw] font-bold leading-[1.1] text-white tracking-tight">
-                            Cada jueves, conecta con<br />
-                            6 miembros con futuro.<br />
-                            Offline.
-                        </h1>
-                    </div>
+                <a
+                    href="https://www.mateapp.es/download"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="cursor-pointer hover:scale-105 transition-transform block"
+                >
+                    <Image
+                        src="/cta-button.png"
+                        alt="Solicita tu acceso"
+                        width={215}
+                        height={65}
+                        className="w-[30vw] md:w-[15vw] max-w-[140px] md:max-w-[195px] h-auto"
+                    />
+                </a>
+            </div>
 
-                    {/* Bottom Row */}
-                    <div className="flex flex-col md:flex-row justify-between items-start md:items-end w-full gap-4">
-                        {/* Upgrade your Circle (50px) */}
-                        <div className="text-[5vw] md:text-[3.5vw] font-bold text-white tracking-tight">
+            {/* Text Overlays Layer */}
+            <div className="absolute inset-0 flex flex-col justify-end p-[8vw] md:p-[6vw] pb-[10vw] md:pb-[4vw] font-[family-name:var(--font-funnel-sans)] pointer-events-none">
+                <div className="w-full flex flex-col md:flex-row md:items-end justify-between gap-6 md:gap-4">
+                    {/* Left Side Content */}
+                    <div className="flex flex-col gap-4 md:gap-8">
+                        <div className="flex flex-col">
+                            <h1 className="text-[8vw] md:text-[4.5vw] font-bold leading-[1.1] text-white tracking-tight drop-shadow-2xl">
+                                Cada jueves, conecta con<br />
+                                6 miembros con futuro.<br />
+                                Offline.
+                            </h1>
+                        </div>
+                        <div className="text-[6.5vw] md:text-[3.5vw] font-bold text-white tracking-tight drop-shadow-xl">
                             Upgrade your Circle.
                         </div>
+                    </div>
 
-                        {/* Seleccionamos los miembros (30px) */}
-                        <div className="text-[3.5vw] md:text-[2vw] text-white/90 md:text-white font-medium tracking-tight md:max-w-[40%] md:text-right">
+                    {/* Right Side Content */}
+                    <div className="md:max-w-[30%]">
+                        <p className="text-[4vw] md:text-[1.8vw] text-white font-medium tracking-tight drop-shadow-lg leading-snug md:text-right">
                             Seleccionamos los miembros a la mano.
-                        </div>
+                        </p>
                     </div>
                 </div>
             </div>
