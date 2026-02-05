@@ -35,9 +35,9 @@ export default function Hero() {
                     <Image
                         src="/logo.png"
                         alt="Mate Logo"
-                        width={140}
-                        height={46}
-                        className="w-[18vw] md:w-[8vw] max-w-[85px] md:max-w-[125px] h-auto"
+                        width={210}
+                        height={69}
+                        className="w-[27vw] md:w-[12vw] max-w-[128px] md:max-w-[188px] h-auto"
                     />
                 </Link>
 
@@ -75,8 +75,8 @@ export default function Hero() {
                     </div>
 
                     {/* Right Side Content */}
-                    <div className="md:max-w-[30%]">
-                        <p className="text-[4vw] md:text-[1.8vw] text-white font-medium tracking-tight drop-shadow-lg leading-snug md:text-right">
+                    <div className="md:max-w-none">
+                        <p className="text-[4.5vw] md:text-[1.8vw] text-white font-medium tracking-tight drop-shadow-lg leading-snug md:text-right whitespace-nowrap">
                             Seleccionamos los miembros a la mano.
                         </p>
                     </div>

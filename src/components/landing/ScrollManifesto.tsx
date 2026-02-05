@@ -40,14 +40,7 @@ const items = [
         )
     },
     {
-        content: (
-            <div className="flex flex-col items-center justify-center gap-8">
-                <div>
-                    <span className="font-bold text-4xl md:text-6xl lg:text-7xl mb-4 block">Upgrade your circle</span>
-                    every Thursday with Mate.
-                </div>
-            </div>
-        )
+        content: "Upgrade your circle every thursday."
     }
 ];
 
