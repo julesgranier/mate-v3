@@ -41,20 +41,36 @@ export default function Hero() {
                     />
                 </Link>
 
-                <a
-                    href="https://www.mateapp.es/download"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="cursor-pointer hover:scale-105 transition-transform block"
-                >
-                    <Image
-                        src="/cta-button.png"
-                        alt="Solicita tu acceso"
-                        width={215}
-                        height={65}
-                        className="w-[30vw] md:w-[15vw] max-w-[140px] md:max-w-[195px] h-auto"
-                    />
-                </a>
+                <div className="flex items-center gap-4 md:gap-6">
+                    <a
+                        href="https://www.instagram.com/mate.santjorge"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="cursor-pointer hover:scale-110 transition-transform block"
+                    >
+                        <Image
+                            src="/instagram.png"
+                            alt="Instagram"
+                            width={40}
+                            height={40}
+                            className="w-[8vw] md:w-[3.5vw] max-w-[32px] md:max-w-[42px] h-auto"
+                        />
+                    </a>
+                    <a
+                        href="https://www.mateapp.es/download"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="cursor-pointer hover:scale-105 transition-transform block"
+                    >
+                        <Image
+                            src="/cta-button.png"
+                            alt="Solicita tu acceso"
+                            width={215}
+                            height={65}
+                            className="w-[30vw] md:w-[15vw] max-w-[140px] md:max-w-[195px] h-auto"
+                        />
+                    </a>
+                </div>
             </div>
 
             {/* Text Overlays Layer */}
