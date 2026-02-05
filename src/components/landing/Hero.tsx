@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
+import { Instagram } from "lucide-react";
 
 export default function Hero() {
     return (
@@ -46,15 +47,9 @@ export default function Hero() {
                         href="https://www.instagram.com/mate.santjorge"
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="cursor-pointer hover:scale-110 transition-transform block"
+                        className="cursor-pointer hover:scale-110 transition-transform block text-white"
                     >
-                        <Image
-                            src="/instagram.png"
-                            alt="Instagram"
-                            width={40}
-                            height={40}
-                            className="w-[8vw] md:w-[3.5vw] max-w-[32px] md:max-w-[42px] h-auto"
-                        />
+                        <Instagram size={32} strokeWidth={1.5} className="w-[8vw] md:w-[3.5vw] max-w-[32px] md:max-w-[42px] h-auto" />
                     </a>
                     <a
                         href="https://www.mateapp.es/download"
