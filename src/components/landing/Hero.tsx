@@ -44,7 +44,7 @@ export default function Hero() {
 
                 <div className="flex items-center gap-4 md:gap-6">
                     <a
-                        href="https://www.instagram.com/mate.santjorge"
+                        href="https://www.instagram.com/mateapp/"
                         target="_blank"
                         rel="noopener noreferrer"
                         className="cursor-pointer hover:scale-110 transition-transform block text-white"
